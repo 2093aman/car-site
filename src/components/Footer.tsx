@@ -107,13 +107,11 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { label: 'Import Process', href: '/import-process' },
-                { label: 'Import Catalogue', href: '/vehicles-for-import' },
-                { label: 'Calculator', href: '/calculator' },
-                { label: 'In Stock', href: '/view-auctions' }
+                { label: 'Calculator', href: '/calculator' }
               ].map((link, index) => (
                 <li key={index}>
-                  <Link 
-                    href={link.href} 
+                  <Link
+                    href={link.href}
                     className="text-[#BDB6AD] hover:text-[#25614F] transition-colors text-sm flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 bg-[#25614F]/50 rounded-full mr-3 group-hover:scale-150 transition-transform"></span>
@@ -132,9 +130,7 @@ const Footer = () => {
                 { label: 'About Us', href: '/about-us' },
                 { label: 'Blog', href: '/blog' },
                 { label: 'FAQs', href: '/faqs' },
-                { label: 'Contact Us', href: '/contact-us' },
-                { label: 'Resources', href: '/resources' },
-                { label: 'Get Started', href: '/import-now' }
+                { label: 'Contact Us', href: '/contact-us' }
               ].map((link, index) => (
                 <li key={index}>
                   <Link

@@ -113,15 +113,16 @@ export default function VehiclesForImport() {
 
   return (
     <div className="bg-carbon">
-      {/* Hero Section */}
-      <section className="relative text-white min-h-[60vh] flex items-center overflow-hidden">
+      {/* Hero Section - Modern */}
+      <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
             src="/images/hero-bg.jpg"
             alt="Japanese sports cars collection"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover animate-ken-burns"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1614] via-transparent to-transparent"></div>
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full z-10">
@@ -130,13 +131,28 @@ export default function VehiclesForImport() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            <h1 className="text-5xl md:text-7xl font-bold font-heading mb-8 leading-tight text-white drop-shadow-2xl">
+            <motion.div
+              className="inline-flex items-center gap-3 bg-[#25614F]/20 rounded-full px-6 py-3 mb-8 border border-[#25614F]/30 backdrop-blur-sm"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="w-2 h-2 bg-[#25614F] rounded-full animate-pulse"></div>
+              <span className="text-[#25614F] font-semibold text-sm uppercase tracking-wider">Premium Imports</span>
+            </motion.div>
+
+            <h1 className="text-4xl md:text-7xl font-bold font-heading mb-8 leading-tight text-[#EAE2D6] drop-shadow-2xl">
               Browse Vehicles Ready for Import to Australia
             </h1>
+            <div className="flex justify-center gap-4 mb-8">
+              <div className="w-20 h-1 bg-[#25614F] rounded-full"></div>
+              <div className="w-20 h-1 bg-[#25614F]/50 rounded-full"></div>
+              <div className="w-20 h-1 bg-[#25614F]/30 rounded-full"></div>
+            </div>
           </motion.div>
 
           <motion.p
-            className="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-white leading-relaxed drop-shadow-lg"
+            className="text-lg md:text-2xl mb-12 max-w-3xl mx-auto text-[#EAE2D6] leading-relaxed drop-shadow-lg font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
@@ -152,7 +168,7 @@ export default function VehiclesForImport() {
           >
             <motion.a
               href="/view-auctions"
-              className="btn-mirror bg-gradient-to-r from-accent to-accent/80 text-white px-10 py-5 rounded-xl font-bold text-lg shadow-2xl hover:shadow-accent/50 border border-accent/20 hover:border-accent/40 transition-all duration-300"
+              className="bg-[#25614F] text-[#EAE2D6] px-12 py-5 rounded-full font-bold text-lg hover:bg-[#1e4f3f] transition-all duration-300 shadow-xl"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -161,7 +177,7 @@ export default function VehiclesForImport() {
 
             <motion.a
               href="/import-now"
-              className="btn-mirror border-2 border-white/80 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 shadow-2xl hover:shadow-white/20 backdrop-blur-sm bg-white/5"
+              className="border-2 border-[#EAE2D6]/80 text-[#EAE2D6] px-12 py-5 rounded-full font-bold text-lg hover:bg-[#EAE2D6] hover:text-[#25614F] transition-all duration-300 shadow-xl backdrop-blur-sm bg-[#EAE2D6]/5"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -171,20 +187,29 @@ export default function VehiclesForImport() {
         </div>
       </section>
 
-      {/* Filter Bar */}
-      <section className="py-8 bg-gradient-to-r from-gray-900 via-black to-gray-900 border-y border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Filter Bar - Modern */}
+      <section className="py-16 bg-[#0F1614] relative overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-1/3 w-96 h-96 bg-[#25614F] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/3 w-96 h-96 bg-[#25614F] rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 border border-gray-700"
+            className="bg-gradient-to-br from-[#25614F]/10 to-[#25614F]/5 rounded-2xl p-8 border border-[#25614F]/30"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h3 className="text-white font-bold text-xl mb-6">Filter Vehicles</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div className="text-center mb-8">
+              <h3 className="text-[#EAE2D6] font-bold text-2xl mb-4">Filter Vehicles</h3>
+              <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full"></div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
               <select
-                className="bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-primary focus:outline-none"
+                className="bg-[#0F1614]/50 border border-[#25614F]/30 rounded-xl px-4 py-4 text-[#EAE2D6] focus:border-[#25614F] focus:outline-none backdrop-blur-sm"
                 value={selectedFilters.make}
                 onChange={(e) => setSelectedFilters({...selectedFilters, make: e.target.value})}
               >
@@ -198,7 +223,7 @@ export default function VehiclesForImport() {
               </select>
 
               <select
-                className="bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-primary focus:outline-none"
+                className="bg-[#0F1614]/50 border border-[#25614F]/30 rounded-xl px-4 py-4 text-[#EAE2D6] focus:border-[#25614F] focus:outline-none backdrop-blur-sm"
                 value={selectedFilters.year}
                 onChange={(e) => setSelectedFilters({...selectedFilters, year: e.target.value})}
               >
@@ -212,7 +237,7 @@ export default function VehiclesForImport() {
               </select>
 
               <select
-                className="bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-primary focus:outline-none"
+                className="bg-[#0F1614]/50 border border-[#25614F]/30 rounded-xl px-4 py-4 text-[#EAE2D6] focus:border-[#25614F] focus:outline-none backdrop-blur-sm"
                 value={selectedFilters.grade}
                 onChange={(e) => setSelectedFilters({...selectedFilters, grade: e.target.value})}
               >
@@ -223,7 +248,7 @@ export default function VehiclesForImport() {
               </select>
 
               <select
-                className="bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-primary focus:outline-none"
+                className="bg-[#0F1614]/50 border border-[#25614F]/30 rounded-xl px-4 py-4 text-[#EAE2D6] focus:border-[#25614F] focus:outline-none backdrop-blur-sm"
                 value={selectedFilters.country}
                 onChange={(e) => setSelectedFilters({...selectedFilters, country: e.target.value})}
               >
@@ -234,7 +259,7 @@ export default function VehiclesForImport() {
               </select>
 
               <select
-                className="bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-primary focus:outline-none"
+                className="bg-[#0F1614]/50 border border-[#25614F]/30 rounded-xl px-4 py-4 text-[#EAE2D6] focus:border-[#25614F] focus:outline-none backdrop-blur-sm"
                 value={selectedFilters.budget}
                 onChange={(e) => setSelectedFilters({...selectedFilters, budget: e.target.value})}
               >
@@ -249,18 +274,33 @@ export default function VehiclesForImport() {
         </div>
       </section>
 
-      {/* Vehicle Grid */}
-      <section className="py-16 bg-carbon">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2
-            className="text-4xl font-bold font-heading text-center mb-12 text-white"
+      {/* Vehicle Grid - Modern */}
+      <section className="py-32 bg-carbon relative overflow-hidden">
+        {/* Background */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(37,97,79,0.15) 1px, transparent 0)',
+            backgroundSize: '50px 50px'
+          }}></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-20"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Available Vehicles
-          </motion.h2>
+            <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6 text-[#EAE2D6]">
+              Available Vehicles
+            </h2>
+            <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full mb-4"></div>
+            <div className="w-16 h-1 bg-[#25614F]/50 mx-auto rounded-full mb-8"></div>
+            <p className="text-xl text-[#BDB6AD] max-w-3xl mx-auto">
+              Premium vehicles ready for Australian import
+            </p>
+          </motion.div>
 
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -272,9 +312,9 @@ export default function VehiclesForImport() {
             {vehicles.map((vehicle, index) => (
               <motion.div
                 key={vehicle.id}
-                className="group bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden shadow-2xl hover:shadow-primary/20 border border-gray-700 hover:border-primary/50 transition-all duration-500"
+                className="group bg-gradient-to-br from-[#0F1614] to-[#25614F]/10 rounded-2xl overflow-hidden shadow-2xl hover:shadow-[#25614F]/20 border border-[#25614F]/30 hover:border-[#25614F]/50 transition-all duration-500"
                 variants={fadeInUp}
-                whileHover={{ y: -10 }}
+                whileHover={{ y: -10, scale: 1.02 }}
               >
                 <div className="relative h-56 overflow-hidden">
                   <img
@@ -283,7 +323,7 @@ export default function VehiclesForImport() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                  <div className="absolute top-4 right-4 bg-[#25614F] text-[#EAE2D6] px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                     {vehicle.grade}
                   </div>
                   <div className="absolute bottom-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
@@ -292,26 +332,26 @@ export default function VehiclesForImport() {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-2xl font-bold text-[#EAE2D6] mb-2 group-hover:text-[#25614F] transition-colors">
                     {vehicle.make} {vehicle.model}
                   </h3>
 
-                  <div className="flex items-center gap-4 text-gray-400 mb-4">
+                  <div className="flex items-center gap-4 text-[#BDB6AD] mb-4">
                     <span className="flex items-center gap-1">
-                      <span className="text-primary">📅</span> {vehicle.year}
+                      <span className="text-[#25614F]">📅</span> {vehicle.year}
                     </span>
                     <span className="flex items-center gap-1">
-                      <span className="text-secondary">🛣️</span> {vehicle.mileage.toLocaleString()} km
+                      <span className="text-[#25614F]">🛣️</span> {vehicle.mileage.toLocaleString()} km
                     </span>
                   </div>
 
-                  <p className="text-2xl font-bold text-primary mb-6">
+                  <p className="text-2xl font-bold text-[#25614F] mb-6">
                     {vehicle.priceRange}
                   </p>
 
                   <motion.a
                     href={`/vehicles-for-import/${vehicle.id}`}
-                    className="btn-mirror inline-flex items-center text-secondary hover:text-primary font-bold text-lg transition-all duration-300 bg-secondary/10 hover:bg-primary/10 px-4 py-2 rounded-lg"
+                    className="inline-flex items-center text-[#BDB6AD] hover:text-[#25614F] font-bold text-lg transition-all duration-300 bg-[#25614F]/10 hover:bg-[#25614F]/20 px-4 py-2 rounded-lg"
                     whileHover={{ x: 5 }}
                   >
                     View Details
@@ -324,51 +364,77 @@ export default function VehiclesForImport() {
         </div>
       </section>
 
-      {/* Why Import With Us Mini-Segment */}
-      <section className="py-16 bg-gradient-to-r from-gray-900 via-black to-gray-900">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h3
-            className="text-3xl font-bold text-center mb-12 text-white"
+      {/* Why Import With Us - Modern */}
+      <section className="py-32 bg-[#0F1614] relative overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-1/3 w-96 h-96 bg-[#25614F] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/3 w-96 h-96 bg-[#25614F] rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Why Import With Us
-          </motion.h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-[#EAE2D6]">
+              Why Import With Us
+            </h3>
+            <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full mb-4"></div>
+            <div className="w-16 h-1 bg-[#25614F]/50 mx-auto rounded-full mb-8"></div>
+            <p className="text-xl text-[#BDB6AD] max-w-2xl mx-auto">
+              Experience the difference with our premium import service
+            </p>
+          </motion.div>
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="flex items-center gap-4 text-gray-300">
-              <span className="text-primary text-2xl">✓</span>
-              <span>Transparent landed cost</span>
-            </div>
-            <div className="flex items-center gap-4 text-gray-300">
-              <span className="text-primary text-2xl">✓</span>
-              <span>Full inspection report</span>
-            </div>
-            <div className="flex items-center gap-4 text-gray-300">
-              <span className="text-primary text-2xl">✓</span>
-              <span>Photos, underbody checks & rust inspection</span>
-            </div>
-            <div className="flex items-center gap-4 text-gray-300">
-              <span className="text-primary text-2xl">✓</span>
-              <span>Shipping, customs, GST & compliance included</span>
-            </div>
+            {[
+              'Transparent landed cost',
+              'Full inspection report',
+              'Photos, underbody checks & rust inspection',
+              'Shipping, customs, GST & compliance included'
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className="flex items-start gap-4 text-[#BDB6AD] bg-gradient-to-br from-[#25614F]/10 to-[#25614F]/5 rounded-xl p-6 border border-[#25614F]/30"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ scale: 1.05, y: -5 }}
+              >
+                <div className="flex-shrink-0 w-8 h-8 bg-[#25614F] rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-[#EAE2D6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span className="leading-relaxed pt-1">{item}</span>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="py-16 bg-gradient-to-r from-primary via-primary/90 to-secondary">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* CTA Section - Modern Gradient */}
+      <section className="py-32 bg-gradient-to-br from-[#25614F] via-[#25614F]/95 to-[#1e4f3f] relative overflow-hidden">
+        {/* Animated Background */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        </div>
+
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h2
-            className="text-4xl md:text-6xl font-bold font-heading mb-8 text-white"
+            className="text-4xl md:text-5xl font-bold font-heading mb-6 text-[#EAE2D6]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -377,7 +443,7 @@ export default function VehiclesForImport() {
             Can't find the car you want?
           </motion.h2>
           <motion.p
-            className="text-xl text-white/90 mb-12 max-w-2xl mx-auto"
+            className="text-xl text-[#EAE2D6]/90 mb-12 max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -385,18 +451,22 @@ export default function VehiclesForImport() {
           >
             We can source it directly for you from our extensive network of global auctions and suppliers.
           </motion.p>
-          <motion.a
-            href="/import-now"
-            className="btn-mirror bg-white text-primary px-12 py-6 rounded-2xl font-bold text-xl shadow-2xl hover:shadow-white/50 transition-all duration-300 relative group inline-block"
+          <motion.div
+            className="flex flex-col sm:flex-row gap-6 justify-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            whileHover={{ scale: 1.05, y: -3 }}
-            whileTap={{ scale: 0.95 }}
           >
-            <span className="relative z-10">Request Custom Search</span>
-          </motion.a>
+            <motion.a
+              href="/import-now"
+              className="bg-[#EAE2D6] text-[#25614F] px-12 py-5 rounded-full font-bold text-lg hover:bg-white transition-all duration-300 shadow-2xl"
+              whileHover={{ scale: 1.05, y: -3 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span className="relative z-10">Request Custom Search</span>
+            </motion.a>
+          </motion.div>
         </div>
       </section>
     </div>
