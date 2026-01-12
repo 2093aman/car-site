@@ -331,7 +331,7 @@ export default function Calculator() {
                         transition={{ duration: 0.5 }}
                       >
                         <span className="text-[#BDB6AD]">FOB Price</span>
-                        <span className="text-[#EAE2D6] font-bold text-xl">{formatCurrency(fobPrice)}</span>
+                        <span className="text-[#EAE2D6] font-bold text-xl">{formatCurrency(parseFloat(fobPrice.replace(/[^0-9.]/g, '')) || 0)}</span>
                       </motion.div>
 
                       {/* Duty Amount */}
