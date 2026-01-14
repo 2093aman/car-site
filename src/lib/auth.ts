@@ -12,13 +12,21 @@ export async function verifyPassword(password: string, hash: string): Promise<bo
 }
 
 export function generateToken(payload: object): string {
-  return jwt.sign(payload, JWT_SECRET, { expiresIn: '1h' });
+  // Increased to 7 days to prevent session expiry issues during editing
+  return jwt.sign(payload, JWT_SECRET, { expiresIn: '7d' });
 }
 
 export function verifyToken(token: string): any {
   try {
     return jwt.verify(token, JWT_SECRET);
-  } catch {
+  } catch (error) {
+    if (error instanceof jwt.TokenExpiredError) {
+      console.error('JWT Verification Error: Token Expired at', error.expiredAt);
+    } else if (error instanceof jwt.JsonWebTokenError) {
+      console.error('JWT Verification Error: Invalid Token -', error.message);
+    } else {
+      console.error('JWT Verification Error:', error);
+    }
     return null;
   }
 }

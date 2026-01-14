@@ -53,7 +53,7 @@ export default function VehicleCard({ vehicle }: VehicleCardProps) {
 
     return (
         <Link
-            href={`/vehicles-for-import/${vehicle.slug}`}
+            href={`/vehicles-for-import/${vehicle._id}`}
             className="group bg-gradient-to-br from-[#0F1614] to-[#25614F]/10 rounded-2xl overflow-hidden shadow-2xl hover:shadow-[#25614F]/20 border border-[#25614F]/30 hover:border-[#25614F]/50 transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02] block"
         >
             {/* Image Container */}

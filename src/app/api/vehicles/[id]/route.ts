@@ -50,14 +50,19 @@ export async function PUT(
 ) {
     try {
         // Verify admin auth
+        // Verify admin auth
         const authHeader = request.headers.get('Authorization');
+
         if (!authHeader || !authHeader.startsWith('Bearer ')) {
+            console.warn('PUT /api/vehicles/[id] - Missing or invalid auth header:', authHeader);
             return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
         }
 
         const token = authHeader.split(' ')[1];
         const decoded = verifyToken(token);
+
         if (!decoded) {
+            console.warn('PUT /api/vehicles/[id] - Token verification failed. Token suffix:', token.slice(-6));
             return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
         }
 

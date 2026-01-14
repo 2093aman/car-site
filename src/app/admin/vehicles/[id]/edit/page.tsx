@@ -109,6 +109,13 @@ export default function EditVehicle({ params }: EditVehicleProps) {
 
         const token = localStorage.getItem('token');
 
+        if (!token) {
+            alert('Authentication execution. Please log in again.');
+            window.location.href = '/admin/login';
+            setSaving(false);
+            return;
+        }
+
         // Prepare data - convert strings to numbers where needed
         const submitData = {
             ...formData,
@@ -134,6 +141,9 @@ export default function EditVehicle({ params }: EditVehicleProps) {
 
             if (res.ok) {
                 router.push('/admin/vehicles');
+            } else if (res.status === 401) {
+                alert('Session expired. Please log in again.');
+                window.location.href = '/admin/login';
             } else {
                 const error = await res.json();
                 alert(`Failed to update vehicle: ${error.error}`);

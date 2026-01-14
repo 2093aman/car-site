@@ -26,6 +26,14 @@ export default function ImageUploader({ images, onChange, maxImages = 20 }: Imag
 
         setUploading(true);
         const token = localStorage.getItem('token');
+
+        if (!token) {
+            alert('Authentication execution. Please log in again.');
+            window.location.href = '/admin/login';
+            setUploading(false);
+            return;
+        }
+
         const newImages: VehicleImage[] = [...images];
 
         for (const file of Array.from(files)) {
@@ -48,6 +56,11 @@ export default function ImageUploader({ images, onChange, maxImages = 20 }: Imag
                         public_id: data.public_id,
                         order: newImages.length,
                     });
+                } else if (res.status === 401) {
+                    alert('Session expired. Please log in again.');
+                    window.location.href = '/admin/login';
+                    setUploading(false);
+                    return;
                 } else {
                     const error = await res.json();
                     alert(`Failed to upload ${file.name}: ${error.error}`);
