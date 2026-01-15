@@ -37,11 +37,11 @@ export default function VehicleCard({ vehicle }: VehicleCardProps) {
     // Get listing type badge styles
     const getListingTypeBadge = () => {
         switch (vehicle.listingType) {
-            case 'order_it':
+            case 'Order It':
                 return { bg: 'bg-purple-600', text: 'Order It' };
-            case 'secure_it':
+            case 'Secure It':
                 return { bg: 'bg-blue-600', text: 'Secure It' };
-            case 'buy_it':
+            case 'Buy It':
                 return { bg: 'bg-green-600', text: 'Buy It' };
             default:
                 return { bg: 'bg-gray-600', text: vehicle.listingType };
@@ -127,7 +127,7 @@ export default function VehicleCard({ vehicle }: VehicleCardProps) {
                 </div>
 
                 {/* ETA for Secure It listings */}
-                {vehicle.listingType === 'secure_it' && vehicle.eta && (
+                {vehicle.listingType === 'Secure It' && vehicle.eta && (
                     <div className="text-blue-400 text-sm mb-3 flex items-center gap-2">
                         <span>🚢</span>
                         ETA: {new Date(vehicle.eta).toLocaleDateString('en-AU', { month: 'short', year: 'numeric' })}
