@@ -53,9 +53,9 @@ export default function VehicleListingClient({ initialVehicles, filterOptions }:
     }, [searchParams, fetchVehicles]);
 
     // Group vehicles by listing type
-    const buyItVehicles = vehicles.filter(v => v.listingType === 'IN_STOCK');
-    const secureItVehicles = vehicles.filter(v => v.listingType === 'IN_TRANSIT');
-    const orderItVehicles = vehicles.filter(v => v.listingType === 'AVAILABLE_TO_ORDER');
+    const buyItVehicles = vehicles.filter(v => v.listingType === 'Buy It');
+    const secureItVehicles = vehicles.filter(v => v.listingType === 'Secure It');
+    const orderItVehicles = vehicles.filter(v => v.listingType === 'Order It');
 
     const fadeInUp = {
         initial: { opacity: 0, y: 60 },
