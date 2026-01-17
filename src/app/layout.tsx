@@ -20,7 +20,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://umzeautohaus.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.umzeautohaus.com.au'),
   title: {
     default: "UMZE Autohaus - Premium Japanese Car Imports Melbourne | JDM Specialists",
     template: "%s | UMZE Autohaus"
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_AU',
-    url: process.env.NEXT_PUBLIC_BASE_URL || 'https://umzeautohaus.com',
+    url: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.umzeautohaus.com.au',
     siteName: 'UMZE Autohaus',
     title: 'UMZE Autohaus - Premium Japanese Car Imports Melbourne',
     description: 'Melbourne\'s trusted JDM import specialists. Import premium Japanese vehicles with full compliance & transparent pricing.',
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code', // Add your Google Search Console verification code
   },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_BASE_URL || 'https://umzeautohaus.com',
+    canonical: process.env.NEXT_PUBLIC_BASE_URL || 'https://www.umzeautohaus.com.au',
   },
 };
 
@@ -84,7 +84,7 @@ export default function RootLayout({
   return (
     <html lang="en-AU">
       <head>
-        <link rel="canonical" href={process.env.NEXT_PUBLIC_BASE_URL || 'https://umzeautohaus.com'} />
+        <link rel="canonical" href={process.env.NEXT_PUBLIC_BASE_URL || 'https://www.umzeautohaus.com.au'} />
         <meta name="geo.region" content="AU-VIC" />
         <meta name="geo.placename" content="Melbourne" />
         <meta name="geo.position" content="-37.8136;144.9631" />

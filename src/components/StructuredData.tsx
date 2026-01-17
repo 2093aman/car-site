@@ -7,7 +7,7 @@ interface OrganizationSchemaProps {
 
 export function OrganizationSchema({
     name = "UMZE Autohaus",
-    url = "https://umzeautohaus.com"
+    url = "https://www.umzeautohaus.com.au"
 }: OrganizationSchemaProps) {
     const schema = {
         "@context": "https://schema.org",
@@ -180,7 +180,7 @@ export function ArticleSchema({
             "name": "UMZE Autohaus",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://umzeautohaus.com/images/PNG.png"
+                "url": "https://www.umzeautohaus.com.au/images/PNG.png"
             }
         },
         "mainEntityOfPage": {
