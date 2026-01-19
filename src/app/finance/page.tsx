@@ -16,7 +16,7 @@ export default function Finance() {
       <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
-            src="/images/hero-bg.jpg"
+            src="/images/WhatsApp Image 2026-01-07 at 17.02.55 (5).jpeg"
             alt="Finance options for vehicle imports"
             className="w-full h-full object-cover"
           />
@@ -59,6 +59,98 @@ export default function Finance() {
           >
             Flexible financing solutions for your vehicle import needs.
           </motion.p>
+        </div>
+      </section>
+
+      {/* Flexible Finance Solutions Section */}
+      <section className="py-32 bg-gradient-to-br from-[#0F1614] to-[#1a2420] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left - Image */}
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="relative rounded-3xl overflow-hidden h-[500px]">
+                <img
+                  src="/images/WhatsApp Image 2026-01-07 at 17.02.55 (4).jpeg"
+                  alt="Flexible Finance Solutions"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0F1614] via-transparent to-transparent"></div>
+              </div>
+            </motion.div>
+
+            {/* Right - Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <motion.div
+                className="inline-flex items-center gap-3 bg-[#25614F]/20 rounded-full px-6 py-3 mb-8 border border-[#25614F]/30"
+                whileHover={{ scale: 1.05 }}
+              >
+                <svg className="w-5 h-5 text-[#25614F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="text-[#25614F] font-semibold text-sm uppercase tracking-wider">Finance Solutions</span>
+              </motion.div>
+
+              <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6 text-[#EAE2D6] leading-tight">
+                Flexible Finance Solutions
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-[#25614F] to-transparent mb-8"></div>
+
+              <div className="space-y-6">
+                <p className="text-xl text-[#BDB6AD] leading-relaxed">
+                  We understand that importing your dream vehicle is a significant investment. That's why we work with trusted finance partners to help make your import journey more accessible.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-[#25614F]/20 rounded-full flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-[#25614F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-[#EAE2D6] mb-2">Competitive Rates</h3>
+                      <p className="text-[#BDB6AD]">Access to competitive finance rates through our trusted lending partners</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-[#25614F]/20 rounded-full flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-[#25614F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-[#EAE2D6] mb-2">Quick Approval</h3>
+                      <p className="text-[#BDB6AD]">Fast-track approval process to secure your vehicle without delay</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-[#25614F]/20 rounded-full flex items-center justify-center mt-1">
+                      <svg className="w-4 h-4 text-[#25614F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-[#EAE2D6] mb-2">Flexible Terms</h3>
+                      <p className="text-[#BDB6AD]">Tailored repayment plans designed to suit your financial situation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

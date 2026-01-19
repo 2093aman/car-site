@@ -24,7 +24,7 @@ export default function AboutUs() {
       <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
-            src="/images/WhatsApp Image 2025-12-22 at 16.13.17.jpeg"
+            src="/images/WhatsApp Image 2026-01-07 at 16.11.44 (2).jpeg"
             alt="Japanese classic car"
             className="w-full h-full object-cover animate-ken-burns"
           />
