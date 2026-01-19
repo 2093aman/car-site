@@ -10,7 +10,7 @@ export default function FinanceOptions() {
             <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
                 <div className="absolute inset-0">
                     <img
-                        src="/images/hero-bg.jpg"
+                        src="/images/WhatsApp Image 2026-01-07 at 17.02.55 (5).jpeg"
                         alt="Finance Options"
                         className="w-full h-full object-cover animate-ken-burns"
                     />
@@ -67,7 +67,7 @@ export default function FinanceOptions() {
                         >
                             <div className="relative rounded-3xl overflow-hidden h-[500px]">
                                 <img
-                                    src="/images/WhatsApp Image 2026-01-07 at 16.11.32.jpeg"
+                                    src="/images/WhatsApp Image 2026-01-07 at 17.02.55 (4).jpeg"
                                     alt="Vehicle Finance"
                                     className="w-full h-full object-cover"
                                 />
