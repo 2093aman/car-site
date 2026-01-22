@@ -466,7 +466,7 @@ export default function Calculator() {
             </h2>
             <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full mb-4"></div>
             <div className="w-16 h-1 bg-[#25614F]/50 mx-auto rounded-full mb-6"></div>
-            <p className="text-xl text-[#BDB6AD] max-w-2xl mx-auto">
+            <p className="text-base text-[#BDB6AD] max-w-2xl mx-auto">
               Transparent formulas, no hidden calculations
             </p>
           </motion.div>
@@ -563,7 +563,7 @@ export default function Calculator() {
             Ready to Start Your Import?
           </motion.h2>
           <motion.p
-            className="text-xl text-[#EAE2D6]/90 mb-12 max-w-2xl mx-auto leading-relaxed"
+            className="text-base text-[#EAE2D6]/90 mb-12 max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

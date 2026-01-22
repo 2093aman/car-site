@@ -47,7 +47,7 @@ export default function Home() {
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-[#EAE2D6] drop-shadow-2xl">
                 UMZE AUTOHAUS
               </h1>
-              <p className="text-lg md:text-2xl lg:text-3xl mb-6 text-[#EAE2D6] font-semibold drop-shadow-lg">
+              <p className="text-base md:text-xl lg:text-2xl mb-6 text-[#EAE2D6] font-semibold drop-shadow-lg">
                 We help people in Australia import quality cars from Japan
               </p>
             </motion.div>
@@ -92,7 +92,7 @@ export default function Home() {
         </section>
 
         {/* 2 INTRODUCTION — WHO WE ARE */}
-        <section className="relative py-32 overflow-hidden bg-carbon">
+        <section className="relative py-16 md:py-32 overflow-hidden bg-carbon">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-0">
             <div className="absolute inset-0" style={{
@@ -144,7 +144,7 @@ export default function Home() {
                     <img
                       src="/images/CHANGE 1.jpeg"
                       alt="Japanese Car Import"
-                      className="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-[300px] md:h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                     />
 
                     {/* Overlay Gradient */}
@@ -403,7 +403,7 @@ export default function Home() {
               </h2>
               <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full mb-4"></div>
               <div className="w-16 h-1 bg-[#25614F]/50 mx-auto rounded-full mb-8"></div>
-              <p className="text-xl text-[#BDB6AD] max-w-2xl mx-auto leading-relaxed">
+              <p className="text-base text-[#BDB6AD] max-w-2xl mx-auto leading-relaxed">
                 Importing a vehicle is a big decision. We guide you through each stage, explain things as we go, and make sure expectations are clear from the start.
               </p>
             </motion.div>
@@ -661,7 +661,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <p className="text-xl text-[#EAE2D6] font-semibold italic">
+              <p className="text-base md:text-xl text-[#EAE2D6] font-semibold italic">
                 Importing isn't about shortcuts — it's about making informed decisions.
               </p>
             </motion.div>
@@ -692,7 +692,7 @@ export default function Home() {
                 Understand the Real Cost
               </h2>
               <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full mb-8"></div>
-              <p className="text-xl text-[#BDB6AD] max-w-3xl mx-auto">
+              <p className="text-base text-[#BDB6AD] max-w-3xl mx-auto">
                 Transparent pricing starts with clear expectations
               </p>
             </motion.div>
@@ -985,7 +985,7 @@ export default function Home() {
               </h2>
               <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full mb-4"></div>
               <div className="w-16 h-1 bg-[#25614F]/50 mx-auto rounded-full"></div>
-              <p className="text-xl text-[#BDB6AD] max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base text-[#BDB6AD] max-w-3xl mx-auto leading-relaxed">
                 High-quality vehicles imported from Japan with meticulous attention to detail and transparent processes
               </p>
             </motion.div>

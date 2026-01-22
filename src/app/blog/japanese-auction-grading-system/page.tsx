@@ -88,7 +88,7 @@ export default function JapaneseAuctionGradingSystem() {
             <p className="text-xl text-[#BDB6AD] leading-relaxed mb-8">
               Japanese auctions can feel confusing to first-time importers. Auction sheets look complex with codes, grades, and diagrams that seem like a foreign language. However, understanding these documents is crucial before you bid on any vehicle.
             </p>
-            <p className="text-lg text-[#BDB6AD] leading-relaxed mb-8">
+            <p className="text-base text-[#BDB6AD] leading-relaxed mb-8">
               At UMZE Autohaus, we've helped hundreds of buyers navigate Japanese auctions. We've seen costly mistakes made when people bid without properly reading auction sheets. This guide will help you understand what you're looking at and avoid those expensive errors.
             </p>
 
@@ -261,7 +261,7 @@ export default function JapaneseAuctionGradingSystem() {
               ].map((item, index) => (
                 <div key={index} className="bg-[#1a2420] rounded-xl p-4 border border-[#25614F]/20">
                   <div className="flex items-center gap-4">
-                    <span className="text-lg font-bold text-[#25614F] min-w-[80px]">{item.code}</span>
+                    <span className="text-base font-bold text-[#25614F] min-w-[80px]">{item.code}</span>
                     <span className="text-[#BDB6AD]">{item.desc}</span>
                   </div>
                 </div>
@@ -355,7 +355,7 @@ export default function JapaneseAuctionGradingSystem() {
                 }
               ].map((item, index) => (
                 <div key={index} className="bg-[#1a2420] rounded-xl p-4 border border-[#25614F]/20">
-                  <h4 className="text-lg font-bold text-[#EAE2D6] mb-2">{item.title}</h4>
+                  <h4 className="text-base font-bold text-[#EAE2D6] mb-2">{item.title}</h4>
                   <p className="text-[#BDB6AD]">{item.desc}</p>
                 </div>
               ))}
@@ -377,7 +377,7 @@ export default function JapaneseAuctionGradingSystem() {
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="bg-[#1a2420] rounded-xl p-6 border border-[#25614F]/20">
-                <h3 className="text-lg font-bold text-[#25614F] mb-3">Smells & Interior</h3>
+                <h3 className="text-base font-bold text-[#25614F] mb-3">Smells & Interior</h3>
                 <ul className="space-y-2 text-sm text-[#BDB6AD]">
                   <li>• "Smoke smell" - Engine issues likely</li>
                   <li>• "Pet smell" - Extensive cleaning needed</li>
@@ -385,7 +385,7 @@ export default function JapaneseAuctionGradingSystem() {
                 </ul>
               </div>
               <div className="bg-[#1a2420] rounded-xl p-6 border border-[#25614F]/20">
-                <h3 className="text-lg font-bold text-[#25614F] mb-3">Mechanical Notes</h3>
+                <h3 className="text-base font-bold text-[#25614F] mb-3">Mechanical Notes</h3>
                 <ul className="space-y-2 text-sm text-[#BDB6AD]">
                   <li>• "Engine noise" - Requires investigation</li>
                   <li>• "AC not cold" - Air conditioning issues</li>
@@ -393,7 +393,7 @@ export default function JapaneseAuctionGradingSystem() {
                 </ul>
               </div>
               <div className="bg-[#1a2420] rounded-xl p-6 border border-[#25614F]/20">
-                <h3 className="text-lg font-bold text-[#25614F] mb-3">Rust & Underbody</h3>
+                <h3 className="text-base font-bold text-[#25614F] mb-3">Rust & Underbody</h3>
                 <ul className="space-y-2 text-sm text-[#BDB6AD]">
                   <li>• "Surface rust" - Cosmetic only</li>
                   <li>• "Underbody rust" - Structural concern</li>
@@ -498,7 +498,7 @@ export default function JapaneseAuctionGradingSystem() {
               Remember: grades are a starting point, not the end of your assessment. The most important information is often found in the detailed notes, diagrams, and comments.
             </p>
             <div className="bg-gradient-to-r from-[#25614F]/20 to-[#25614F]/10 rounded-2xl p-8 border border-[#25614F]/30">
-              <p className="text-lg text-[#EAE2D6] font-semibold mb-4">
+              <p className="text-base text-[#EAE2D6] font-semibold mb-4">
                 Ready to import but want expert guidance?
               </p>
               <p className="text-[#BDB6AD] leading-relaxed mb-6">

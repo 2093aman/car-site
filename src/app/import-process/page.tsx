@@ -225,7 +225,7 @@ export default function ImportProcess() {
                       {step.title}
                     </h3>
                     <div className={`w-20 h-1 bg-[#25614F] rounded-full mb-4 ${isEven ? 'md:mx-0 mx-auto' : 'md:ml-auto mx-auto'}`}></div>
-                    <p className="text-[#BDB6AD] text-lg leading-relaxed mb-4">
+                    <p className="text-[#BDB6AD] text-base leading-relaxed mb-4">
                       {step.description}
                     </p>
                     {step.details && (
@@ -277,7 +277,7 @@ export default function ImportProcess() {
                 Import Cost Breakdown
               </h3>
               <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full mb-6"></div>
-              <p className="text-[#BDB6AD] text-lg">
+              <p className="text-[#BDB6AD] text-base">
                 Sample vehicle: Toyota Chaser
               </p>
             </motion.div>
@@ -309,7 +309,7 @@ export default function ImportProcess() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
-                      <span className="text-[#BDB6AD] text-lg">{item.label}:</span>
+                      <span className="text-[#BDB6AD] text-base">{item.label}:</span>
                       <span className="text-[#EAE2D6] font-bold text-xl">{item.value}</span>
                     </motion.div>
                   ))}

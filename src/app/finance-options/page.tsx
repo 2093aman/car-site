@@ -104,11 +104,11 @@ export default function FinanceOptions() {
                             </h2>
                             <div className="w-24 h-1 bg-[#25614F]"></div>
 
-                            <p className="text-lg text-[#BDB6AD] leading-relaxed">
+                            <p className="text-base text-[#BDB6AD] leading-relaxed">
                                 Purchasing or importing a vehicle doesn't always mean paying the full amount upfront. Depending on your circumstances, finance may be available through trusted third-party providers.
                             </p>
 
-                            <p className="text-lg text-[#BDB6AD] leading-relaxed">
+                            <p className="text-base text-[#BDB6AD] leading-relaxed">
                                 At Umze Autohaus, we do not provide finance directly. Instead, we assist clients by connecting them with reputable, independent finance partners who are familiar with both locally sourced and imported vehicles.
                             </p>
 
@@ -327,7 +327,7 @@ export default function FinanceOptions() {
                                             {item.icon}
                                         </div>
                                         <div>
-                                            <h4 className="text-lg font-bold text-[#EAE2D6] mb-2">{item.title}</h4>
+                                            <h4 className="text-base font-bold text-[#EAE2D6] mb-2">{item.title}</h4>
                                             <p className="text-[#BDB6AD] text-sm">{item.desc}</p>
                                         </div>
                                     </motion.div>

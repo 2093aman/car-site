@@ -88,10 +88,10 @@ export default function HowToReadAuctionSheet() {
             <p className="text-xl text-[#BDB6AD] leading-relaxed mb-8">
               If you're new to importing cars from Japan, auction sheets can look intimidating. The codes, grades, and diagrams seem like a foreign language designed to confuse rather than inform. But here's the good news: once you understand the system, it becomes straightforward.
             </p>
-            <p className="text-lg text-[#BDB6AD] leading-relaxed mb-8">
+            <p className="text-base text-[#BDB6AD] leading-relaxed mb-8">
               This guide will walk you through reading a Japanese auction sheet step-by-step. We'll break down the four key sections, explain what each part means, and show you how to spot potential issues before you bid. By the end, you'll feel confident reviewing auction sheets on your own.
             </p>
-            <p className="text-lg text-[#BDB6AD] leading-relaxed mb-8">
+            <p className="text-base text-[#BDB6AD] leading-relaxed mb-8">
               At UMZE Autohaus, we've helped hundreds of first-time importers navigate Japanese auctions. We know what questions buyers have and what mistakes to avoid. This guide shares that experience with you.
             </p>
           </motion.div>
@@ -253,7 +253,7 @@ export default function HowToReadAuctionSheet() {
                   { code: 'SRS', desc: 'Airbags' }
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-4">
-                    <span className="text-lg font-bold text-[#25614F] min-w-[60px]">{item.code}</span>
+                    <span className="text-base font-bold text-[#25614F] min-w-[60px]">{item.code}</span>
                     <span className="text-[#BDB6AD]">{item.desc}</span>
                   </div>
                 ))}
@@ -283,7 +283,7 @@ export default function HowToReadAuctionSheet() {
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-[#1a2420] rounded-xl p-6 border border-[#25614F]/20">
-                <h3 className="text-lg font-bold text-[#25614F] mb-3">Cosmetic Issues:</h3>
+                <h3 className="text-base font-bold text-[#25614F] mb-3">Cosmetic Issues:</h3>
                 <ul className="space-y-2 text-sm text-[#BDB6AD]">
                   <li>• A1–A3: Scratches (light to severe)</li>
                   <li>• U1–U3: Dents (small to large)</li>
@@ -292,7 +292,7 @@ export default function HowToReadAuctionSheet() {
                 </ul>
               </div>
               <div className="bg-[#1a2420] rounded-xl p-6 border border-[#25614F]/20">
-                <h3 className="text-lg font-bold text-[#25614F] mb-3">Repair Indicators:</h3>
+                <h3 className="text-base font-bold text-[#25614F] mb-3">Repair Indicators:</h3>
                 <ul className="space-y-2 text-sm text-[#BDB6AD]">
                   <li>• X: Panel replacement</li>
                   <li>• XX: Multiple panel replacements</li>
@@ -331,7 +331,7 @@ export default function HowToReadAuctionSheet() {
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-[#1a2420] rounded-xl p-6 border border-[#25614F]/20">
-                <h3 className="text-lg font-bold text-[#25614F] mb-3">Car A: Grade 4</h3>
+                <h3 className="text-base font-bold text-[#25614F] mb-3">Car A: Grade 4</h3>
                 <ul className="space-y-2 text-sm text-[#BDB6AD]">
                   <li>• Interior: Grade B</li>
                   <li>• Diagram: A1 (front bumper), U1 (hood)</li>
@@ -342,7 +342,7 @@ export default function HowToReadAuctionSheet() {
                 </p>
               </div>
               <div className="bg-[#1a2420] rounded-xl p-6 border border-[#25614F]/20">
-                <h3 className="text-lg font-bold text-[#25614F] mb-3">Car B: Grade 4</h3>
+                <h3 className="text-base font-bold text-[#25614F] mb-3">Car B: Grade 4</h3>
                 <ul className="space-y-2 text-sm text-[#BDB6AD]">
                   <li>• Interior: Grade D</li>
                   <li>• Diagram: X (front fender), X (hood), U3 (roof)</li>
@@ -465,7 +465,7 @@ export default function HowToReadAuctionSheet() {
             </p>
 
             <div className="bg-gradient-to-r from-[#25614F]/20 to-[#25614F]/10 rounded-2xl p-8 border border-[#25614F]/30">
-              <p className="text-lg text-[#EAE2D6] font-semibold mb-4">
+              <p className="text-base text-[#EAE2D6] font-semibold mb-4">
                 Ready to import but want expert guidance?
               </p>
               <p className="text-[#BDB6AD] leading-relaxed mb-6">

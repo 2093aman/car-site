@@ -21,7 +21,7 @@ export default function AboutUs() {
   return (
     <div className="bg-carbon">
       {/* Hero Section - Modern Overlay */}
-      <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
+      <section className="relative text-white min-h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
             src="/images/WhatsApp Image 2026-01-07 at 16.11.44 (2).jpeg"
@@ -48,7 +48,7 @@ export default function AboutUs() {
               <span className="text-[#25614F] font-semibold text-sm uppercase tracking-wider">Our Story</span>
             </motion.div>
 
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-heading mb-8 leading-tight text-[#EAE2D6] drop-shadow-2xl">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold font-heading mb-6 leading-tight text-[#EAE2D6] drop-shadow-2xl">
               WE HELP PEOPLE IN AUSTRALIA IMPORT QUALITY CARS FROM JAPAN
             </h1>
             <div className="flex justify-center gap-4 mb-8">
@@ -59,7 +59,7 @@ export default function AboutUs() {
           </motion.div>
 
           <motion.p
-            className="text-lg md:text-2xl mb-12 max-w-3xl mx-auto text-[#EAE2D6] font-semibold drop-shadow-lg"
+            className="text-base md:text-xl mb-8 max-w-3xl mx-auto text-[#EAE2D6] font-semibold drop-shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
@@ -90,7 +90,7 @@ export default function AboutUs() {
       </section>
 
       {/* Our Story - Image-Driven Flowing Design */}
-      <section id="story" className="py-32 bg-[#0F1614] relative overflow-hidden">
+      <section id="story" className="py-16 md:py-32 bg-[#0F1614] relative overflow-hidden">
         {/* Subtle Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#25614F] to-transparent"></div>
@@ -131,15 +131,15 @@ export default function AboutUs() {
               transition={{ duration: 0.8 }}
             >
               <div className="space-y-6">
-                <p className="text-lg md:text-xl text-[#EAE2D6] leading-relaxed">
+                <p className="text-base text-[#EAE2D6] leading-relaxed">
                   Umze Autohaus began long before it became a business. In <span className="text-[#25614F] font-bold">2012</span>, my dad started importing cars from Japan out of pure passion.
                 </p>
 
-                <p className="text-lg text-[#BDB6AD] leading-relaxed">
+                <p className="text-base text-[#BDB6AD] leading-relaxed">
                   I grew up around that process, and in 2019, I imported my first car, a Toyota Chaser. It was a clean example that saved me thousands compared to the local market. That experience showed me the real value of buying directly from Japan.
                 </p>
 
-                <p className="text-lg text-[#BDB6AD] leading-relaxed">
+                <p className="text-base text-[#BDB6AD] leading-relaxed">
                   When I saw the condition of my first import, it genuinely surprised me. The car was cleaner than anything I'd inspected locally, and the savings were real.
                 </p>
               </div>
@@ -160,7 +160,7 @@ export default function AboutUs() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="relative rounded-3xl overflow-hidden h-[500px]">
+              <div className="relative rounded-3xl overflow-hidden h-[300px] md:h-[500px]">
                 <img
                   src="/images/CHANGE 3.jpeg"
                   alt="First Toyota Chaser Import"
@@ -196,29 +196,29 @@ export default function AboutUs() {
             transition={{ duration: 0.8 }}
           >
             <div className="space-y-6 text-center">
-              <p className="text-lg text-[#BDB6AD] leading-relaxed">
+              <p className="text-base text-[#BDB6AD] leading-relaxed">
                 From there, things grew naturally. I began helping mates, family, and eventually their mates as well. Translating auction sheets, researching exporters, checking condition reports, and guiding people through the entire process became something I genuinely enjoyed.
               </p>
 
-              <p className="text-lg text-[#BDB6AD] leading-relaxed">
+              <p className="text-base text-[#BDB6AD] leading-relaxed">
                 Over the years, I learned that an auction grade only tells part of the story. The real condition comes from checking photos, physical inspections, underbody condition, repairs, rust points, engine bay signs, and overall presentation.
               </p>
 
-              <p className="text-xl md:text-2xl text-[#EAE2D6] leading-relaxed font-light mt-8">
+              <p className="text-base text-[#EAE2D6] leading-relaxed font-light mt-8">
                 We've worked with more than <span className="text-[#25614F] font-bold">100 cars</span>—everything from classic JDM models and daily runabouts to modern Europeans, performance cars, hybrids, and collector vehicles.
               </p>
             </div>
           </motion.div>
 
           {/* Vertical Timeline Journey */}
-          <div className="mb-32">
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-center mb-16 text-[#EAE2D6] uppercase tracking-wider">The Journey</h3>
+          <div className="mb-16 md:mb-32">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading text-center mb-12 md:mb-16 text-[#EAE2D6] uppercase tracking-wider">The Journey</h3>
 
             <div className="max-w-4xl mx-auto relative">
               {/* Vertical Line */}
               <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#25614F]/50 via-[#25614F] to-[#25614F]/50 hidden lg:block"></div>
 
-              <div className="space-y-16">
+              <div className="space-y-8 md:space-y-16">
                 {[
                   {
                     year: "2012",
@@ -257,7 +257,7 @@ export default function AboutUs() {
                     <div className={`flex-1 ${item.align === 'right' ? 'lg:text-right' : 'lg:text-left'} text-left`}>
                       <div className="text-5xl font-bold text-[#25614F] mb-2">{item.year}</div>
                       <h4 className="text-2xl font-bold text-[#EAE2D6] mb-3">{item.title}</h4>
-                      <p className="text-lg text-[#BDB6AD] leading-relaxed">{item.description}</p>
+                      <p className="text-base text-[#BDB6AD] leading-relaxed">{item.description}</p>
                     </div>
 
                     {/* Center Circle */}
@@ -320,7 +320,7 @@ export default function AboutUs() {
                 <img
                   src="/images/CHANGE 3.1.jpg"
                   alt="Japanese Import Car"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[300px] md:h-[500px] object-cover"
                 />
 
                 {/* Stats Overlay */}
@@ -379,7 +379,7 @@ export default function AboutUs() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  <p className="text-xl md:text-2xl text-[#EAE2D6] font-light leading-relaxed mb-6">
+                  <p className="text-base text-[#EAE2D6] font-light leading-relaxed mb-6">
                     Japanese vehicles stand apart because of how they're <span className="text-[#25614F] font-semibold">maintained</span>, not just how they're built.
                   </p>
                 </motion.div>
@@ -391,11 +391,11 @@ export default function AboutUs() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  <p className="text-lg text-[#BDB6AD] leading-relaxed">
+                  <p className="text-base text-[#BDB6AD] leading-relaxed">
                     Strict inspection standards, excellent road infrastructure, and a culture of regular maintenance mean Japanese cars often arrive in Australia with lower kilometres and better overall condition than their local equivalents.
                   </p>
 
-                  <p className="text-lg text-[#BDB6AD] leading-relaxed">
+                  <p className="text-base text-[#BDB6AD] leading-relaxed">
                     Beyond condition, there's access. Japan offers models, specifications, and special editions that simply aren't available in the Australian market - including JDM classics, performance vehicles, and collector cars that retain their value.
                   </p>
                 </motion.div>
@@ -433,13 +433,13 @@ export default function AboutUs() {
               What Makes UMZE Autohaus Different
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#25614F] to-transparent mx-auto mb-8"></div>
-            <p className="text-xl md:text-2xl text-[#BDB6AD] max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base text-[#BDB6AD] max-w-3xl mx-auto leading-relaxed">
               Our approach combines genuine experience with transparent practices
             </p>
           </motion.div>
 
           {/* Alternating Features */}
-          <div className="space-y-24">
+          <div className="space-y-12 md:space-y-24">
             {[
               {
                 icon: (
@@ -510,7 +510,7 @@ export default function AboutUs() {
                     {feature.title}
                   </h3>
                   <div className={`w-24 h-1 bg-[#25614F] rounded-full mb-4 ${feature.align === 'right' ? 'ml-auto' : ''}`}></div>
-                  <p className="text-lg text-[#BDB6AD] leading-relaxed">
+                  <p className="text-base text-[#BDB6AD] leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
@@ -669,7 +669,7 @@ export default function AboutUs() {
             <div className="relative inline-block">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#25614F]/30 to-[#25614F]/10 rounded-2xl blur"></div>
               <div className="relative bg-gradient-to-br from-[#1a2420] to-[#0F1614] rounded-2xl px-10 py-8 border border-[#25614F]/40">
-                <p className="text-lg text-[#BDB6AD] mb-4">
+                <p className="text-base text-[#BDB6AD] mb-4">
                   From classic JDM legends to modern eco-friendly imports
                 </p>
                 <p className="text-2xl text-[#EAE2D6] font-bold">
@@ -749,7 +749,7 @@ export default function AboutUs() {
 
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#25614F]/20 via-[#25614F]/30 to-[#25614F]/20 blur-xl rounded-3xl"></div>
-              <p className="relative text-2xl md:text-3xl text-[#EAE2D6] leading-relaxed font-light py-12 px-8">
+              <p className="relative text-base text-[#EAE2D6] leading-relaxed font-light py-12 px-8">
                 Helping people import quality cars from Japan <span className="text-[#25614F] font-semibold">safely</span>, <span className="text-[#25614F] font-semibold">transparently</span>, and <span className="text-[#25614F] font-semibold">confidently</span>.
               </p>
             </div>
@@ -776,7 +776,7 @@ export default function AboutUs() {
             Ready to Start Your Import?
           </motion.h2>
           <motion.p
-            className="text-xl text-[#EAE2D6]/90 mb-12 max-w-2xl mx-auto leading-relaxed"
+            className="text-base text-[#EAE2D6]/90 mb-12 max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
