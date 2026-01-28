@@ -3,6 +3,7 @@ export const dynamic = 'force-dynamic';
 import connectDB from '@/lib/db';
 import FormSubmission from '@/lib/models/FormSubmission';
 import { verifyToken } from '@/lib/auth';
+import { sendEnquiryEmail } from '@/lib/mail-service';
 
 // GET /api/form-submissions - List all submissions (admin only)
 export async function GET(request: NextRequest) {
@@ -46,6 +47,13 @@ export async function POST(request: NextRequest) {
         }
 
         const submission = await FormSubmission.create(body);
+
+        // Send email notification
+        try {
+            await sendEnquiryEmail(submission);
+        } catch (emailError) {
+            console.error('Failed to send enquiry email:', emailError);
+        }
 
         return NextResponse.json(submission, { status: 201 });
     } catch (error) {
