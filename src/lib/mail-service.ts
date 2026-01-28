@@ -1,16 +1,27 @@
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
+  host: process.env.SMTP_HOST || 'smtp.gmail.com',
   port: parseInt(process.env.SMTP_PORT || '587'),
-  secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
+  secure: process.env.SMTP_SECURE === 'true',
   auth: {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
   },
+  tls: {
+    rejectUnauthorized: false // Helps with some hosting providers
+  }
 });
 
 export async function sendEnquiryEmail(submission: any) {
+  // First, verify the connection
+  try {
+    await transporter.verify();
+  } catch (verifyError) {
+    console.error('SMTP Connection Verification Failed:', verifyError);
+    return { success: false, error: 'SMTP Connection Failed' };
+  }
+
   const { name, email, phone, vehicle, budget, message } = submission;
 
   const recipients = ["umzeautohaus11@gmail.com", "Info@umzeautohaus.com.au"];
@@ -64,12 +75,11 @@ export async function sendEnquiryEmail(submission: any) {
   };
 
   try {
-    await transporter.sendMail(mailOptions);
-    console.log('Enquiry email sent successfully to', recipients.join(', '));
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Enquiry email sent successfully:', info.messageId);
     return { success: true };
   } catch (error) {
-
-    console.error('Error sending enquiry email:', error);
+    console.error('CRITICAL: Error sending enquiry email:', error);
     return { success: false, error };
   }
 }
