@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { getVehicles } from '@/lib/vehicle-service';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.umzeautohaus.com.au';
@@ -42,17 +43,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.6,
     }));
 
-    // Fetch dynamic vehicle pages
+    // Fetch dynamic vehicle pages safely
     let vehiclePages: MetadataRoute.Sitemap = [];
     try {
-        const res = await fetch(`${baseUrl}/api/vehicles?limit=100`, {
-            next: { revalidate: 3600 }
-        });
-        if (res.ok) {
-            const data = await res.json();
-            vehiclePages = (data.vehicles || []).map((vehicle: any) => ({
+        const { vehicles } = await getVehicles({ limit: 100 });
+        if (vehicles && Array.isArray(vehicles)) {
+            vehiclePages = vehicles.map((vehicle: any) => ({
                 url: `${baseUrl}/vehicles-for-import/${vehicle._id}`,
-                lastModified: new Date(vehicle.updatedAt || vehicle.createdAt),
+                lastModified: new Date(vehicle.updatedAt || vehicle.createdAt || Date.now()),
                 changeFrequency: 'daily' as const,
                 priority: 0.7,
             }));
