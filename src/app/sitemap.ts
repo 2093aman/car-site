@@ -7,6 +7,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const staticPages = [
         '',
         '/about-us',
+        '/vehicles-for-import',
         '/import-process',
         '/calculator',
         '/blog',
@@ -41,5 +42,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.6,
     }));
 
-    return [...staticPages, ...blogPosts];
+    // Fetch dynamic vehicle pages
+    let vehiclePages: MetadataRoute.Sitemap = [];
+    try {
+        const res = await fetch(`${baseUrl}/api/vehicles?limit=100`, {
+            next: { revalidate: 3600 }
+        });
+        if (res.ok) {
+            const data = await res.json();
+            vehiclePages = (data.vehicles || []).map((vehicle: any) => ({
+                url: `${baseUrl}/vehicles-for-import/${vehicle._id}`,
+                lastModified: new Date(vehicle.updatedAt || vehicle.createdAt),
+                changeFrequency: 'daily' as const,
+                priority: 0.7,
+            }));
+        }
+    } catch (error) {
+        console.error('Error fetching vehicles for sitemap:', error);
+    }
+
+    return [...staticPages, ...blogPosts, ...vehiclePages];
 }

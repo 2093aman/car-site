@@ -157,7 +157,12 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "UMZE Autohaus",
-              "url": "https://www.umzeautohaus.com.au"
+              "url": "https://www.umzeautohaus.com.au",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.umzeautohaus.com.au/vehicles-for-import?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
             })
           }}
         />

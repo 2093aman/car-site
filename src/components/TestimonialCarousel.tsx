@@ -11,6 +11,16 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
+    name: 'Jasmine D',
+    testimonial: 'We had an amazing experience with Umze Autohaus! Umer made the whole process of importing our car really easy from start to finish. He helped with the RWC and registration, kept us updated the entire time, and even went the extra mile by giving the car a complimentary detail and wash. The S450 arrived exactly as described and in beautiful condition. My partner and I couldn\'t be happier with our new family car highly recommend Umze Autohaus to anyone looking to import a vehicle.',
+    rating: 5
+  },
+  {
+    name: 'Elijah Gameau',
+    testimonial: 'I recently imported my Nissan R35 GT-R through Umze Autohaus and couldn\'t be happier with the experience. Umer was professional, knowledgeable, and always happy to answer any questions. He kept me across the process from start to finish, with constant updates and clear communication. I have no hesitation recommending Umze Autohaus to anyone looking to import a quality vehicle from Japan. I will be definitely be back for my next car.',
+    rating: 5
+  },
+  {
     name: 'Vineet Verma',
     testimonial: 'Imported a vehicle from Japan through Umze Autohaus and the process was smooth. Got me the car to exact specs I wanted it. Clear communication, transparent costs, and the car arrived exactly as described. Kept updated from auction to delivery. Very happy with the service and the quality of the car. Would happily use again and recommend.',
     rating: 5

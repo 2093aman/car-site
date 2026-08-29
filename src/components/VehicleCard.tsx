@@ -137,13 +137,23 @@ export default function VehicleCard({ vehicle }: VehicleCardProps) {
                     </div>
                 )}
 
-                <p className="text-2xl font-bold text-[#25614F] mb-4">
-                    {getDisplayPrice()}
-                </p>
+                <div className="flex items-center justify-between gap-2 mb-4">
+                    <p className="text-2xl font-bold text-[#25614F]">
+                        {getDisplayPrice()}
+                    </p>
+                    <span className="text-xs bg-[#25614F]/20 text-[#25614F] border border-[#25614F]/40 px-2.5 py-1 rounded-full font-semibold flex items-center gap-1">
+                        💳 Finance Available
+                    </span>
+                </div>
 
-                <div className="inline-flex items-center text-[#BDB6AD] hover:text-[#25614F] font-bold text-lg transition-all duration-300 bg-[#25614F]/10 hover:bg-[#25614F]/20 px-4 py-2 rounded-lg group-hover:translate-x-1">
-                    {vehicle.listingType || 'View Details'}
-                    <span className="ml-2 text-xl">→</span>
+                <div className="flex items-center justify-between border-t border-[#25614F]/20 pt-4">
+                    <div className="inline-flex items-center text-[#EAE2D6] group-hover:text-white font-bold text-sm transition-all duration-300 bg-[#25614F]/20 group-hover:bg-[#25614F] px-5 py-2.5 rounded-xl">
+                        {vehicle.listingType || 'View Details'}
+                        <span className="ml-2 text-base group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                    <span className="text-xs text-[#BDB6AD] group-hover:text-[#25614F] transition-colors font-medium">
+                        Tap for Details
+                    </span>
                 </div>
             </div>
         </Link>

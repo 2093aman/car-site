@@ -346,13 +346,13 @@ export default function Resources() {
                   <p className="text-gray-400 text-sm mb-4">
                     * Sample data for demonstration purposes
                   </p>
-                  {/* <motion.a
+                  <motion.a
                     href="/vehicles-for-import"
                     className="btn-mirror bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-all duration-300 inline-block"
                     whileHover={{ scale: 1.05 }}
                   >
                     View Real Vehicles
-                  </motion.a> */}
+                  </motion.a>
                 </div>
               </div>
             </div>

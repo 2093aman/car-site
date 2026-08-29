@@ -71,7 +71,7 @@ const Footer = () => {
                 </svg>
               </div>
               <h5 className="text-[#EAE2D6] font-semibold mb-2 uppercase text-sm">Location</h5>
-              <p className="text-[#BDB6AD] text-sm">Melbourne, Australia</p>
+              <p className="text-[#BDB6AD] text-sm">Melbourne based servicing all of Australia</p>
             </div>
 
             {/* Phone Card */}
@@ -115,9 +115,10 @@ const Footer = () => {
             <h4 className="text-[#EAE2D6] font-bold font-heading mb-6 uppercase tracking-wider text-sm">Services</h4>
             <ul className="space-y-3">
               {[
+                { label: 'Stock', href: '/vehicles-for-import' },
                 { label: 'Import Process', href: '/import-process' },
                 { label: 'Calculator', href: '/calculator' },
-                { label: 'Finance', href: '/finance-options' }
+                { label: 'Finance Options', href: '/finance-options' }
               ].map((link, index) => (
                 <li key={index}>
                   <Link
@@ -188,7 +189,7 @@ const Footer = () => {
         >
           {/* Copyright */}
           <div className="text-[#BDB6AD] text-sm text-center md:text-left">
-            <p>© 2026 Umze Autohaus. All rights reserved.</p>
+            <p>© 2026 Umze Autohaus. All rights reserved. LMCT 0013202 | ABN 36 691 422 429</p>
             <div className="flex items-center gap-4 mt-2 justify-center md:justify-start">
               <Link href="/privacy-policy" className="hover:text-[#25614F] transition-colors text-xs">
                 Privacy Policy
@@ -224,7 +225,7 @@ const Footer = () => {
               },
               {
                 name: 'Facebook',
-                href: 'https://facebook.com/umzeautohaus',
+                href: 'https://www.facebook.com/profile.php?id=61584983915064',
                 icon: (
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />

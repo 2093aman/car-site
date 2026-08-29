@@ -10,6 +10,18 @@ interface PastImport {
 
 const pastImports: PastImport[] = [
     {
+        image: '/images/WhatsApp Image 2026-08-29 at 23.50.43.jpeg',
+        title: 'Recent Import 1'
+    },
+    {
+        image: '/images/WhatsApp Image 2026-08-29 at 23.50.44 (1).jpeg',
+        title: 'Recent Import 2'
+    },
+    {
+        image: '/images/WhatsApp Image 2026-08-29 at 23.50.44.jpeg',
+        title: 'Recent Import 3'
+    },
+    {
         image: '/images/past import/WhatsApp Image 2025-12-22 at 15.49.04.jpeg',
         title: 'Past Import 1'
     },
