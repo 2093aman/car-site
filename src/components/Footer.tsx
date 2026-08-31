@@ -188,8 +188,9 @@ const Footer = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {/* Copyright */}
-          <div className="text-[#BDB6AD] text-sm text-center md:text-left">
-            <p>© 2026 Umze Autohaus. All rights reserved. LMCT 0013202 | ABN 36 691 422 429</p>
+          <div className="text-[#BDB6AD] text-sm text-center md:text-left space-y-1">
+            <p>© 2026 Umze Autohaus. All rights reserved.</p>
+            <p>LMCT 0013202 | ABN 36 691 422 429</p>
             <div className="flex items-center gap-4 mt-2 justify-center md:justify-start">
               <Link href="/privacy-policy" className="hover:text-[#25614F] transition-colors text-xs">
                 Privacy Policy

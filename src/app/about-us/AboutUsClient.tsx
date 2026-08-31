@@ -112,8 +112,8 @@ export default function AboutUs() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <p className="text-base md:text-lg text-[#EAE2D6] leading-relaxed">
-                Umze Autohaus began long before it became a business. In <span className="text-[#25614F] font-bold">2012</span>, my dad started importing cars from Japan out of pure passion.
+              <p className="text-base text-[#BDB6AD] leading-relaxed">
+                Umze Autohaus began long before it became a business. In 2012, my dad started importing cars from Japan out of pure passion.
               </p>
 
               <p className="text-base text-[#BDB6AD] leading-relaxed">
@@ -178,8 +178,8 @@ export default function AboutUs() {
                 Over the years, I learned that an auction grade only tells part of the story. The real condition comes from checking photos, physical inspections, underbody condition, repairs, rust points, engine bay signs, and overall presentation.
               </p>
 
-              <p className="text-base md:text-lg text-[#EAE2D6] leading-relaxed font-semibold pt-2">
-                We&apos;ve worked with more than <span className="text-[#25614F] font-bold">100+ cars</span>—everything from classic JDM models and daily runabouts to modern Europeans, performance cars, hybrids, and collector vehicles.
+              <p className="text-base text-[#BDB6AD] leading-relaxed">
+                We&apos;ve worked with more than 100+ cars—everything from classic JDM models and daily runabouts to modern Europeans, performance cars, hybrids, and collector vehicles.
               </p>
             </div>
           </motion.div>
@@ -305,16 +305,16 @@ export default function AboutUs() {
                 Why Japan?
               </h2>
 
-              <p className="text-base md:text-lg text-[#EAE2D6] font-light leading-relaxed">
-                Japanese vehicles stand apart because of how they&apos;re <span className="text-[#25614F] font-semibold">maintained</span>, not just how they&apos;re built.
+              <p className="text-base text-[#BDB6AD] leading-relaxed">
+                Japanese vehicles stand apart because of how they&apos;re maintained, not just how they&apos;re built.
               </p>
 
               <div className="border-l-4 border-[#25614F] pl-6 space-y-4 bg-[#16221F]/40 p-5 rounded-r-xl border border-y-[#25614F]/20 border-r-[#25614F]/20">
-                <p className="text-sm md:text-base text-[#BDB6AD] leading-relaxed">
+                <p className="text-base text-[#BDB6AD] leading-relaxed">
                   Strict inspection standards, excellent road infrastructure, and a culture of regular maintenance mean Japanese cars often arrive in Australia with lower kilometres and better overall condition than their local equivalents.
                 </p>
 
-                <p className="text-sm md:text-base text-[#BDB6AD] leading-relaxed">
+                <p className="text-base text-[#BDB6AD] leading-relaxed">
                   Beyond condition, there&apos;s access. Japan offers models, specifications, and special editions that simply aren&apos;t available in the Australian market - including JDM classics, performance vehicles, and collector cars that retain their value.
                 </p>
               </div>
