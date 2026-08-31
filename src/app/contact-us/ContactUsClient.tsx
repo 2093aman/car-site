@@ -104,7 +104,7 @@ export default function ContactUsClient() {
                                     </div>
                                     <input name="phone" value={formData.phone} onChange={handleChange} className="w-full bg-[#1a2420] border-2 border-[#25614F]/40 rounded-xl px-4 py-4 text-[#EAE2D6]" placeholder="Phone" required />
                                     <textarea name="message" value={formData.message} onChange={handleChange} rows={6} className="w-full bg-[#1a2420] border-2 border-[#25614F]/40 rounded-xl px-4 py-4 text-[#EAE2D6]" placeholder="Message" required></textarea>
-                                    <button type="submit" disabled={status === 'loading'} className="w-full bg-[#25614F] text-[#EAE2D6] py-5 rounded-xl font-bold">{status === 'loading' ? 'Sending...' : 'Send Message'}</button>
+                                    <button type="submit" disabled={status === 'loading'} className="w-full bg-[#25614F] text-[#EAE2D6] py-4 rounded-xl font-bold text-base hover:bg-[#1e4f3f] transition-all duration-300">{status === 'loading' ? 'Sending...' : 'Send Message'}</button>
                                 </form>
                             )}
                         </div>

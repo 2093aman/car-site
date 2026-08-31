@@ -618,7 +618,7 @@ export default function HomeClient() {
             <div className="text-center mb-16">
               <Link
                 href="/import-process"
-                className="bg-[#25614F] text-[#EAE2D6] px-10 py-4 rounded-full font-bold text-base md:text-lg hover:bg-[#1e4f3f] transition-all duration-300 inline-flex items-center gap-2 shadow-xl"
+                className="bg-[#25614F] text-[#EAE2D6] px-10 py-4 rounded-xl font-bold text-base md:text-lg hover:bg-[#1e4f3f] transition-all duration-300 inline-flex items-center gap-2 shadow-xl"
               >
                 <span>View Full Process</span>
                 <span>→</span>
@@ -635,7 +635,7 @@ export default function HomeClient() {
               </p>
               <Link
                 href="/contact-us"
-                className="bg-[#EAE2D6] text-[#25614F] px-10 py-4 rounded-full font-bold text-base md:text-lg hover:bg-white transition-all duration-300 inline-block shadow-xl"
+                className="bg-[#EAE2D6] text-[#25614F] px-10 py-4 rounded-xl font-bold text-base md:text-lg hover:bg-white transition-all duration-300 inline-block shadow-xl"
               >
                 Get in Touch
               </Link>

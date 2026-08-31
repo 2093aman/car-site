@@ -392,7 +392,7 @@ export default function FinanceOptions() {
 
                         <motion.a
                             href="/contact-us"
-                            className="inline-block bg-[#EAE2D6] text-[#25614F] px-12 py-5 rounded-full font-bold text-lg hover:bg-white transition-all duration-300 shadow-2xl"
+                            className="inline-block bg-[#EAE2D6] text-[#25614F] px-10 py-4 rounded-xl font-bold text-base hover:bg-white transition-all duration-300 shadow-2xl"
                             whileHover={{ scale: 1.05, y: -3 }}
                             whileTap={{ scale: 0.95 }}
                         >
