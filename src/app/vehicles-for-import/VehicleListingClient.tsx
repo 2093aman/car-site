@@ -135,61 +135,6 @@ export default function VehicleListingClient({ initialVehicles, filterOptions }:
                 </div>
             </section>
 
-            {/* Finance Options Banner Section */}
-            <section className="py-16 bg-gradient-to-r from-[#0F1614] via-[#1a2b25] to-[#0F1614] border-y border-[#25614F]/30 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="bg-gradient-to-br from-[#16221F] to-[#0F1614] border border-[#25614F]/40 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
-                        {/* Glowing Background Effect */}
-                        <div className="absolute top-0 right-0 -mt-12 -mr-12 w-64 h-64 bg-[#25614F]/20 rounded-full blur-3xl pointer-events-none"></div>
-
-                        <div className="grid lg:grid-cols-12 gap-8 items-center">
-                            {/* Left Content */}
-                            <div className="lg:col-span-8 space-y-4 text-left">
-                                <div className="inline-flex items-center gap-2 bg-[#25614F]/20 border border-[#25614F]/40 rounded-full px-4 py-1.5 text-xs uppercase tracking-wider text-[#25614F] font-bold">
-                                    <span className="w-2 h-2 rounded-full bg-[#25614F] animate-pulse"></span>
-                                    Finance Options Available
-                                </div>
-                                <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#EAE2D6] leading-tight">
-                                    Need Flexible Finance For Your Vehicle?
-                                </h2>
-                                <p className="text-[#BDB6AD] text-base md:text-lg leading-relaxed">
-                                    Whether buying local stock or importing directly from Japan, we connect you with trusted third-party finance partners for fast assessments and tailored loan solutions.
-                                </p>
-                                
-                                <div className="grid sm:grid-cols-3 gap-4 pt-2 text-sm text-[#EAE2D6]">
-                                    <div className="flex items-center gap-2 bg-[#0F1614]/80 p-3 rounded-xl border border-[#25614F]/20">
-                                        <span className="text-[#25614F] text-lg">⚡</span> Fast Pre-Approvals
-                                    </div>
-                                    <div className="flex items-center gap-2 bg-[#0F1614]/80 p-3 rounded-xl border border-[#25614F]/20">
-                                        <span className="text-[#25614F] text-lg">🤝</span> Trusted Lenders
-                                    </div>
-                                    <div className="flex items-center gap-2 bg-[#0F1614]/80 p-3 rounded-xl border border-[#25614F]/20">
-                                        <span className="text-[#25614F] text-lg">🚗</span> Import & Stock Finance
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Right Action Buttons */}
-                            <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4 justify-center items-stretch">
-                                <Link
-                                    href="/finance-options"
-                                    className="bg-[#25614F] hover:bg-[#1e4f3f] text-[#EAE2D6] px-8 py-4 rounded-xl font-bold text-center text-base transition-all duration-300 shadow-xl hover:shadow-[#25614F]/30 hover:scale-[1.02] flex items-center justify-center gap-2"
-                                >
-                                    <span>Explore Finance Options</span>
-                                    <span className="text-xl">→</span>
-                                </Link>
-                                <Link
-                                    href="/calculator"
-                                    className="bg-[#25614F]/10 hover:bg-[#25614F]/20 text-[#EAE2D6] border border-[#25614F]/40 hover:border-[#25614F] px-8 py-4 rounded-xl font-semibold text-center text-base transition-all duration-300 flex items-center justify-center gap-2"
-                                >
-                                    <span>Calculate Repayments</span>
-                                    <span className="text-xl">📊</span>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* BUY IT Section */}
             <section className="py-16 md:py-24 bg-[#0F1614] relative overflow-hidden">
@@ -331,6 +276,61 @@ export default function VehicleListingClient({ initialVehicles, filterOptions }:
                             <p className="text-[#BDB6AD] text-lg">No custom import options available at the moment.</p>
                         </div>
                     )}
+                </div>
+            </section>
+
+            {/* Finance Options Banner Section */}
+            <section className="py-16 bg-gradient-to-r from-[#0F1614] via-[#1a2b25] to-[#0F1614] border-y border-[#25614F]/30 relative overflow-hidden">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="bg-gradient-to-br from-[#16221F] to-[#0F1614] border border-[#25614F]/40 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                        {/* Glowing Background Effect */}
+                        <div className="absolute top-0 right-0 -mt-12 -mr-12 w-64 h-64 bg-[#25614F]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                        <div className="grid lg:grid-cols-12 gap-8 items-center">
+                            {/* Left Content */}
+                            <div className="lg:col-span-8 space-y-4 text-left">
+                                <div className="inline-flex items-center gap-2 bg-[#25614F]/20 border border-[#25614F]/40 rounded-full px-4 py-1.5 text-xs uppercase tracking-wider text-[#25614F] font-bold">
+                                    <span className="w-2 h-2 rounded-full bg-[#25614F] animate-pulse"></span>
+                                    Finance Options Available
+                                </div>
+                                <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#EAE2D6] leading-tight">
+                                    Need Flexible Finance For Your Vehicle?
+                                </h2>
+                                <p className="text-[#BDB6AD] text-base md:text-lg leading-relaxed">
+                                    Whether buying local stock or importing directly from Japan, we connect you with trusted third-party finance partners for fast assessments and tailored loan solutions.
+                                </p>
+                                
+                                <div className="grid sm:grid-cols-3 gap-4 pt-2 text-sm text-[#EAE2D6]">
+                                    <div className="flex items-center gap-2 bg-[#0F1614]/80 p-3 rounded-xl border border-[#25614F]/20">
+                                        <span className="text-[#25614F] text-lg">⚡</span> Fast Pre-Approvals
+                                    </div>
+                                    <div className="flex items-center gap-2 bg-[#0F1614]/80 p-3 rounded-xl border border-[#25614F]/20">
+                                        <span className="text-[#25614F] text-lg">🤝</span> Trusted Lenders
+                                    </div>
+                                    <div className="flex items-center gap-2 bg-[#0F1614]/80 p-3 rounded-xl border border-[#25614F]/20">
+                                        <span className="text-[#25614F] text-lg">🚗</span> Import &amp; Stock Finance
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Right Action Buttons */}
+                            <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4 justify-center items-stretch">
+                                <Link
+                                    href="/finance-options"
+                                    className="bg-[#25614F] hover:bg-[#1e4f3f] text-[#EAE2D6] px-8 py-4 rounded-xl font-bold text-center text-base transition-all duration-300 shadow-xl hover:shadow-[#25614F]/30 hover:scale-[1.02] flex items-center justify-center gap-2"
+                                >
+                                    <span>Explore Finance Options</span>
+                                    <span className="text-xl">→</span>
+                                </Link>
+                                <Link
+                                    href="/calculator"
+                                    className="bg-[#25614F]/10 hover:bg-[#25614F]/20 text-[#EAE2D6] border border-[#25614F]/40 hover:border-[#25614F] px-8 py-4 rounded-xl font-semibold text-center text-base transition-all duration-300 flex items-center justify-center gap-2 uppercase tracking-wider"
+                                >
+                                    <span>Import Cost Calculator</span>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 

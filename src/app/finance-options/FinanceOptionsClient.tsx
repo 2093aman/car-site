@@ -81,7 +81,7 @@ export default function FinanceOptions() {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.6, delay: 0.3 }}
                                 >
-                                    <div className="bg-[#25614F]/90 backdrop-blur-md rounded-2xl p-6 border border-[#EAE2D6]/20">
+                                    <div className="bg-[#25614F]/10 backdrop-blur-sm rounded-2xl p-6 border border-[#EAE2D6]/10">
                                         <div className="text-center">
                                             <div className="text-4xl font-bold text-[#EAE2D6] mb-2">Trusted Partners</div>
                                             <div className="text-sm text-[#EAE2D6]/80">Independent finance providers</div>

@@ -123,13 +123,6 @@ export default function AboutUs() {
               <p className="text-base text-[#BDB6AD] leading-relaxed">
                 When I saw the condition of my first import, it genuinely surprised me. The car was cleaner than anything I&apos;d inspected locally, and the savings were real.
               </p>
-
-              {/* Highlighted Quote */}
-              <div className="relative pl-6 border-l-4 border-[#25614F] bg-[#16221F]/50 py-4 pr-4 rounded-r-xl">
-                <p className="text-lg md:text-xl text-[#25614F] font-semibold italic leading-relaxed">
-                  &quot;What started as a personal win slowly turned into helping others make better, safer, and more affordable choices.&quot;
-                </p>
-              </div>
             </motion.div>
 
             {/* Right - Image */}
@@ -150,7 +143,7 @@ export default function AboutUs() {
 
                 {/* Floating Stats Badge */}
                 <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-[#25614F]/90 backdrop-blur-md rounded-xl p-5 border border-[#EAE2D6]/20 shadow-xl">
+                  <div className="bg-[#25614F]/10 backdrop-blur-sm rounded-xl p-5 border border-[#EAE2D6]/10 shadow-xl">
                     <div className="text-center">
                       <div className="text-4xl font-bold text-[#EAE2D6] mb-1">2019</div>
                       <div className="text-xs md:text-sm text-[#EAE2D6]/90">First Toyota Chaser Import</div>
@@ -169,17 +162,17 @@ export default function AboutUs() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="space-y-4 text-center">
-              <p className="text-base text-[#BDB6AD] leading-relaxed">
+            <div className="space-y-4 text-left">
+              <p className="text-base text-white leading-relaxed">
                 From there, things grew naturally. I began helping mates, family, and eventually their mates as well. Translating auction sheets, researching exporters, checking condition reports, and guiding people through the entire process became something I genuinely enjoyed.
               </p>
 
-              <p className="text-base text-[#BDB6AD] leading-relaxed">
+              <p className="text-base text-white leading-relaxed">
                 Over the years, I learned that an auction grade only tells part of the story. The real condition comes from checking photos, physical inspections, underbody condition, repairs, rust points, engine bay signs, and overall presentation.
               </p>
 
-              <p className="text-base text-[#BDB6AD] leading-relaxed">
-                We&apos;ve worked with more than 100+ cars—everything from classic JDM models and daily runabouts to modern Europeans, performance cars, hybrids, and collector vehicles.
+              <p className="text-base text-white leading-relaxed">
+                We&apos;ve worked with more than 100+ cars — everything from classic JDM models and daily runabouts to modern Europeans, performance cars, hybrids, and collector vehicles. What started as a personal win slowly turned into helping others make better, safer, and more affordable choices.
               </p>
             </div>
           </motion.div>
@@ -275,7 +268,7 @@ export default function AboutUs() {
 
                 {/* Stats Overlay */}
                 <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-[#25614F]/90 backdrop-blur-md rounded-xl p-5 border border-[#EAE2D6]/20 shadow-xl">
+                  <div className="bg-[#25614F]/10 backdrop-blur-sm rounded-xl p-5 border border-[#EAE2D6]/10 shadow-xl">
                     <div className="flex items-center justify-between">
                       <div>
                         <div className="text-3xl md:text-4xl font-bold text-[#EAE2D6] mb-1">100+</div>

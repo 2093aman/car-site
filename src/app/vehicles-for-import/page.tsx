@@ -5,10 +5,10 @@ import { getVehicles } from '@/lib/vehicle-service';
 import { getFilterOptions } from '@/lib/vehicle-data';
 
 export const metadata: Metadata = {
-  title: 'JDM Cars for Sale in Australia | UMZE Autohaus',
+  title: 'STOCK | UMZE Autohaus',
   description: 'Explore premium JDM cars for sale in Australia. UMZE Autohaus helps you buy authentic Japanese cars directly from Japan auctions.',
   openGraph: {
-    title: 'JDM Cars for Sale in Australia | UMZE Autohaus',
+    title: 'STOCK | UMZE Autohaus',
     description: 'Explore premium JDM cars for sale in Australia. UMZE Autohaus helps you buy authentic Japanese cars directly from Japan auctions.',
     type: 'website',
   },

@@ -44,11 +44,11 @@ export default function HomeClient() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight text-[#EAE2D6] drop-shadow-2xl">
-                Umze Autohaus - Japanese Car Imports in Australia
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-heading mb-3 leading-tight text-[#EAE2D6] drop-shadow-2xl uppercase tracking-widest">
+                UMZE AUTOHAUS
               </h1>
-              <p className="text-lg md:text-2xl mb-6 text-[#EAE2D6] font-semibold drop-shadow-lg">
-                We help people in Australia import quality cars from Japan
+              <p className="text-lg md:text-2xl mb-6 text-[#BDB6AD] font-semibold drop-shadow-lg uppercase tracking-wider">
+                Sales. Sourcing. Imports.
               </p>
             </motion.div>
 
@@ -58,7 +58,7 @@ export default function HomeClient() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Melbourne-based specialists helping people import vehicles from Japan with clarity, guidance, and full process support.
+              Buy from our local stock or import direct from Japan. A simple, transparent process from start to finish. We handle everything for you and deliver safely anywhere in Australia.
             </motion.p>
 
             {/* Primary CTAs */}
@@ -76,10 +76,10 @@ export default function HomeClient() {
               </Link>
 
               <Link
-                href="/calculator"
-                className="border-2 border-[#BDB6AD] text-[#EAE2D6] px-10 py-4 rounded-xl font-bold text-base md:text-lg hover:bg-[#BDB6AD]/10 backdrop-blur-sm transition-all duration-300"
+                href="/vehicles-for-import"
+                className="border-2 border-[#BDB6AD] text-[#EAE2D6] px-10 py-4 rounded-xl font-bold text-base md:text-lg hover:bg-[#BDB6AD]/10 backdrop-blur-sm transition-all duration-300 uppercase tracking-widest"
               >
-                Use the Calculator
+                View Stock
               </Link>
             </motion.div>
           </div>
@@ -127,11 +127,11 @@ export default function HomeClient() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
                   <div className="absolute bottom-6 left-6 right-6 grid grid-cols-2 gap-4">
-                    <div className="bg-[#0F1614]/90 backdrop-blur-md rounded-xl p-4 border border-[#25614F]/20">
+                    <div className="bg-[#0F1614]/10 backdrop-blur-sm rounded-xl p-4 border border-[#25614F]/10">
                       <div className="text-2xl md:text-3xl font-bold text-[#EAE2D6] mb-1">100%</div>
                       <div className="text-xs md:text-sm text-[#BDB6AD]">Transparency</div>
                     </div>
-                    <div className="bg-[#0F1614]/90 backdrop-blur-md rounded-xl p-4 border border-[#25614F]/20">
+                    <div className="bg-[#0F1614]/10 backdrop-blur-sm rounded-xl p-4 border border-[#25614F]/10">
                       <div className="text-2xl md:text-3xl font-bold text-[#EAE2D6] mb-1">Expert</div>
                       <div className="text-xs md:text-sm text-[#BDB6AD]">Guidance</div>
                     </div>
@@ -639,6 +639,15 @@ export default function HomeClient() {
               >
                 Get in Touch
               </Link>
+              <div className="mt-6">
+                <Link
+                  href="/calculator"
+                  className="inline-flex items-center gap-2 text-[#EAE2D6]/80 hover:text-[#EAE2D6] text-sm font-semibold uppercase tracking-wider border-b border-[#EAE2D6]/40 hover:border-[#EAE2D6] transition-all duration-300 pb-0.5"
+                >
+                  <span>📊</span>
+                  <span>Estimate your import costs →</span>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
