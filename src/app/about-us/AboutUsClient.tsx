@@ -95,19 +95,19 @@ export default function AboutUs() {
               <span className="w-2 h-2 bg-[#25614F] rounded-full animate-pulse"></span>
               <span className="text-[#25614F] font-semibold text-xs md:text-sm uppercase tracking-wider">Our Journey</span>
             </div>
-
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4 text-[#EAE2D6] uppercase tracking-wider">
               Our Story
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#25614F] to-transparent mx-auto"></div>
           </motion.div>
 
-          {/* Main Story with Side Image */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
-            {/* Left - Story Text */}
+          {/* TOP ROW: 4 paragraphs LEFT | Image + card RIGHT */}
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-stretch mb-10">
+
+            {/* Left — first 4 paragraphs */}
             <motion.div
-              className="space-y-6"
-              initial={{ opacity: 0, x: -40 }}
+              className="space-y-5"
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
@@ -123,59 +123,63 @@ export default function AboutUs() {
               <p className="text-base text-[#BDB6AD] leading-relaxed">
                 When I saw the condition of my first import, it genuinely surprised me. The car was cleaner than anything I&apos;d inspected locally, and the savings were real.
               </p>
+
+              <p className="text-base text-[#BDB6AD] leading-relaxed">
+                From there, things grew naturally. I began helping mates, family, and eventually their mates as well. Translating auction sheets, researching exporters, checking condition reports, and guiding people through the entire process became something I genuinely enjoyed.
+              </p>
             </motion.div>
 
-            {/* Right - Image */}
+            {/* Right — full image + 2019 card */}
             <motion.div
-              className="relative"
-              initial={{ opacity: 0, x: 40 }}
+              className="flex flex-col"
+              initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.15 }}
             >
-              <div className="relative rounded-2xl overflow-hidden h-[320px] md:h-[450px] border border-[#25614F]/30 shadow-2xl">
+              {/* Image — fills available height */}
+              <div className="relative rounded-2xl overflow-hidden flex-1 min-h-[260px] border border-[#25614F]/20 shadow-2xl mb-4">
                 <img
                   src="/images/CHANGE 3.jpeg"
                   alt="Toyota Chaser imported from Japan - UMZE Autohaus first import"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover absolute inset-0"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0F1614] via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0F1614]/40 via-transparent to-transparent"></div>
+              </div>
 
-                {/* Floating Stats Badge */}
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-[#25614F]/10 backdrop-blur-sm rounded-xl p-5 border border-[#EAE2D6]/10 shadow-xl">
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-[#EAE2D6] mb-1">2019</div>
-                      <div className="text-xs md:text-sm text-[#EAE2D6]/90">First Toyota Chaser Import</div>
-                    </div>
-                  </div>
+              {/* 2019 card below image */}
+              <div className="bg-[#16221F] border border-[#25614F]/30 rounded-2xl p-5 flex items-center gap-4">
+                <div className="w-12 h-12 bg-[#25614F]/20 rounded-xl border border-[#25614F]/40 flex items-center justify-center flex-shrink-0 text-xl">
+                  🏁
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-[#EAE2D6] leading-none mb-0.5">2019</div>
+                  <div className="text-sm text-[#BDB6AD]">First Toyota Chaser Import</div>
+                  <div className="text-xs text-[#25614F] font-semibold uppercase tracking-wider mt-0.5">Where it all started</div>
                 </div>
               </div>
             </motion.div>
           </div>
 
-          {/* Continued Story */}
+          {/* BOTTOM ROW: last 2 paragraphs — full width */}
           <motion.div
-            className="mb-20 max-w-4xl mx-auto bg-[#16221F] border border-[#25614F]/30 rounded-2xl p-8 md:p-10 shadow-xl"
-            initial={{ opacity: 0, y: 30 }}
+            className="space-y-5"
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <div className="space-y-4 text-left">
-              <p className="text-base text-white leading-relaxed">
-                From there, things grew naturally. I began helping mates, family, and eventually their mates as well. Translating auction sheets, researching exporters, checking condition reports, and guiding people through the entire process became something I genuinely enjoyed.
-              </p>
-
-              <p className="text-base text-white leading-relaxed">
-                Over the years, I learned that an auction grade only tells part of the story. The real condition comes from checking photos, physical inspections, underbody condition, repairs, rust points, engine bay signs, and overall presentation.
-              </p>
-
-              <p className="text-base text-white leading-relaxed">
-                We&apos;ve worked with more than 100+ cars — everything from classic JDM models and daily runabouts to modern Europeans, performance cars, hybrids, and collector vehicles. What started as a personal win slowly turned into helping others make better, safer, and more affordable choices.
-              </p>
-            </div>
+            <p className="text-base text-[#BDB6AD] leading-relaxed">
+              Over the years, I learned that an auction grade only tells part of the story. The real condition comes from checking photos, physical inspections, underbody condition, repairs, rust points, engine bay signs, and overall presentation.
+            </p>
+            <p className="text-base text-[#BDB6AD] leading-relaxed">
+              We&apos;ve worked with more than 100+ cars — everything from classic JDM models and daily runabouts to modern Europeans, performance cars, hybrids, and collector vehicles. What started as a personal win slowly turned into helping others make better, safer, and more affordable choices.
+            </p>
           </motion.div>
+
+          {/* Spacer before timeline */}
+          <div className="mt-20"></div>
+
 
           {/* Vertical Timeline Journey */}
           <div>

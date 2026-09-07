@@ -20,6 +20,42 @@ export default function Blog() {
 
   const blogs = [
     {
+      id: 'insuring-a-japanese-import-in-australia',
+      title: 'Insuring a Japanese Import in Australia: What Nobody Tells You Before You Buy',
+      excerpt: 'Insuring an imported Japanese car works differently. What to expect, which insurers understand imports, and why agreed value matters.',
+      date: 'September 7, 2026',
+      readTime: '8 min read',
+      category: 'Buyer Education',
+      image: '/images/WhatsApp Image 2025-11-16 at 16.24.40_d9f92f32.jpg'
+    },
+    {
+      id: 'can-you-get-parts-for-a-japanese-import-in-australia',
+      title: 'Can You Actually Get Parts for a Japanese Import in Australia?',
+      excerpt: 'Worried about parts and servicing for a Japanese import? What is easy to find, what is harder, and why the mechanic matters most.',
+      date: 'September 7, 2026',
+      readTime: '9 min read',
+      category: 'Buyer Education',
+      image: '/images/WhatsApp Image 2025-11-16 at 16.25.52_33e250fd.jpg'
+    },
+    {
+      id: 'what-importing-a-car-from-japan-actually-costs',
+      title: 'What Importing a Car From Japan Actually Costs',
+      excerpt: 'The auction price is only the beginning. Every cost of bringing a car from Japan to an Australian driveway, explained in order.',
+      date: 'September 7, 2026',
+      readTime: '10 min read',
+      category: 'Import Costs',
+      image: '/images/WhatsApp Image 2025-11-16 at 16.27.22_516a75d2.jpg'
+    },
+    {
+      id: 'ten-questions-to-ask-an-importer-before-you-pay-a-deposit',
+      title: 'Ten Questions to Ask an Importer Before You Pay a Deposit',
+      excerpt: 'Importing means paying a large sum for a car you cannot inspect. Ten questions that reveal who you are dealing with before you commit.',
+      date: 'September 7, 2026',
+      readTime: '11 min read',
+      category: 'Buyer Guide',
+      image: '/images/WhatsApp Image 2025-11-16 at 16.27.54_94e4f99c.jpg'
+    },
+    {
       id: 'japanese-car-imports-australia-complete-guide',
       title: 'Japanese Car Imports Australia: The Complete Guide',
       excerpt: 'Discover why Japanese car imports are so popular in Australia and learn the complete process of buying JDM cars with confidence.',
