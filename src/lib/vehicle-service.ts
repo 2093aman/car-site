@@ -165,20 +165,9 @@ async function fetchVehicles(options: GetVehiclesOptions): Promise<VehicleRespon
     }
 }
 
-// Cached version of getVehicles
+// Fetch vehicles directly from DB without caching stale empty states
 export async function getVehicles(options: GetVehiclesOptions): Promise<VehicleResponse> {
-    const cachedFn = unstable_cache(
-        async (opts: GetVehiclesOptions) => fetchVehicles(opts),
-        ['vehicles-list'],
-        { revalidate: 3600, tags: ['vehicles'] }
-    );
-
-    try {
-        return await cachedFn(options);
-    } catch (error) {
-        console.error("Error in getVehicles cache wrapper:", error);
-        return fetchVehicles(options);
-    }
+    return fetchVehicles(options);
 }
 
 export async function getVehicleBySlug(slug: string): Promise<VehicleType | null> {

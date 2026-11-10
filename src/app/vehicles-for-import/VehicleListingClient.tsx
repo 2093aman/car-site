@@ -45,10 +45,9 @@ export default function VehicleListingClient({ initialVehicles, filterOptions }:
         setIsLoading(false);
     }, [searchParams]);
 
-    // Refetch when search params change (after initial render)
+    // Refetch when search params change, or on mount if SSR returned empty
     useEffect(() => {
-        // Skip initial fetch since we have SSR data
-        if (searchParams.toString() !== '') {
+        if (searchParams.toString() !== '' || vehicles.length === 0) {
             fetchVehicles();
         }
     }, [searchParams, fetchVehicles]);
