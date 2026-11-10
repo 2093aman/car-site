@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag, revalidatePath } from 'next/cache';
 export const dynamic = 'force-dynamic';
 
 export async function generateStaticParams() {
@@ -89,6 +90,16 @@ export async function PUT(
             );
         }
 
+        try {
+            revalidateTag('vehicles');
+            revalidateTag('filters');
+            revalidatePath('/vehicles-for-import');
+            revalidatePath(`/vehicles-for-import/${id}`);
+            revalidatePath('/');
+        } catch (revalidateError) {
+            console.error('Error revalidating cache:', revalidateError);
+        }
+
         return NextResponse.json(vehicle);
     } catch (error) {
         console.error('Error updating vehicle:', error);
@@ -128,6 +139,16 @@ export async function DELETE(
                 { error: 'Vehicle not found' },
                 { status: 404 }
             );
+        }
+
+        try {
+            revalidateTag('vehicles');
+            revalidateTag('filters');
+            revalidatePath('/vehicles-for-import');
+            revalidatePath(`/vehicles-for-import/${id}`);
+            revalidatePath('/');
+        } catch (revalidateError) {
+            console.error('Error revalidating cache:', revalidateError);
         }
 
         return NextResponse.json({ message: 'Vehicle deleted successfully' });

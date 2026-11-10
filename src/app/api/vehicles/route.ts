@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { revalidateTag, revalidatePath } from 'next/cache';
 export const dynamic = 'force-dynamic';
 import connectDB from '@/lib/db';
 import Vehicle from '@/lib/models/Vehicle';
@@ -92,6 +93,15 @@ export async function POST(request: NextRequest) {
 
         // Create the vehicle
         const vehicle = await Vehicle.create(body);
+
+        try {
+            revalidateTag('vehicles');
+            revalidateTag('filters');
+            revalidatePath('/vehicles-for-import');
+            revalidatePath('/');
+        } catch (revalidateError) {
+            console.error('Error revalidating cache:', revalidateError);
+        }
 
         return NextResponse.json(vehicle, { status: 201 });
     } catch (error) {

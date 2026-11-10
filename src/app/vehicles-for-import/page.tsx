@@ -4,6 +4,9 @@ import VehicleListingClient from './VehicleListingClient';
 import { getVehicles } from '@/lib/vehicle-service';
 import { getFilterOptions } from '@/lib/vehicle-data';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: 'STOCK | UMZE Autohaus',
   description: 'Explore premium JDM cars for sale in Australia. UMZE Autohaus helps you buy authentic Japanese cars directly from Japan auctions.',
